@@ -35,12 +35,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="server.js.map" />
+    <Content Include="views\index.vash" />
+    <Content Include="views\layout.vash" />
     <TypeScriptCompile Include="Scripts\typings\node\node.d.ts" />
     <TypeScriptCompile Include="server.ts" />
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="views\" />
     <Folder Include="Scripts\" />
     <Folder Include="Scripts\typings\" />
     <Folder Include="Scripts\typings\node\" />

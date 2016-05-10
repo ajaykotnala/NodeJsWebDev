@@ -3,17 +3,22 @@ var port = process.env.port || 1337;
 var express = require("express");
 var app = express();
 
+
+//using view engine vash we do have others view engines as well for e.g (EJS, jade)
+app.set("view engine", "vash");
+
 app.get("/", function(req,res) {
-
-//    res.end('Hello World\n');
-res.send("<html><body><h1>Get Data</h1></body></html>");
+    res.render("index", { title: "Express + Vash" });
 });
+//app.get("/", function(req,res) {
+//res.send("<html><body><h1>Get Data</h1></body></html>");
+//});
 
+app.get("/api/user", function (req, res) {
+   // res.set("Content-Type", "application/json");
+    res.send({name:"Ajay",isAdmin:true,email:"ajay.kotnala@gmail.com"});
+});
 var server = http.createServer(app);
 server.listen(port);
 
-//http.createServer(function (req, res) {
-//    res.writeHead(200, { 'Content-Type': 'text/plain' });
-//    res.end('Hello World\n');
-//}).listen(port);
 //# sourceMappingURL=server.js.map
