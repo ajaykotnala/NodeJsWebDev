@@ -7,5 +7,11 @@
 
 <body>
 <div>@html.block("body")</div>
+
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+
+<div>© 2008 - 2016, Ajay, Inc. or its affiliates. All rights reserved</div>
 </body>
 </html>
