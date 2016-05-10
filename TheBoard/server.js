@@ -7,6 +7,8 @@ var controllers = require("./controllers");
 //using view engine vash we do have others view engines as well for e.g (EJS, jade)
 app.set("view engine", "vash");
 
+//set static resources folder
+app.use(express.static(__dirname + "/public"));
 
 //get with controller functionality and dependency engine
 controllers.init(app);

@@ -2,16 +2,20 @@
 <html>
 
 <head>
-	<title>@model.title</title>
+    <title>@model.title</title>
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="lib/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet" />
 </head>
 
 <body>
-<div>@html.block("body")</div>
+    <div>@html.block("body")</div>
 
-<div>&nbsp;</div>
-<div>&nbsp;</div>
-<div>&nbsp;</div>
-
-<div>© 2008 - 2016, Ajay, Inc. or its affiliates. All rights reserved</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+	<script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <div>© 2008 - 2016, Ajay, Inc. or its affiliates. All rights reserved</div>
 </body>
 </html>
