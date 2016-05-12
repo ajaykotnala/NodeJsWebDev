@@ -117,3 +117,5 @@ Web/dist/
 Web/index.html
 credentials.json
 .vs/
+lib/
+MangoDb
