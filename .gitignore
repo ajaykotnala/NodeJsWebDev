@@ -106,16 +106,9 @@ Desktop.ini
 ## Node js
 ############
 
-_meta/
 node_modules/
 bower_components/
-npm-debug.log
-.ntvs_analysis.dat
-tmp
-build/
-Web/dist/
-Web/index.html
-credentials.json
 .vs/
-lib/
-MangoDb
+/MongoDb
+
+
